@@ -25,6 +25,35 @@ export default function Projects(){
     };
     load();
   },[]);
+    async function deleteProject(project: Project) {
+    const confirmed = window.confirm(
+      `Delete "${project.name}"?\n\nThis will permanently delete the project and all related production data. This cannot be undone.`
+    );
+
+    if (!confirmed) return;
+
+    setDeleting(project.id);
+    setError('');
+
+    const sb = createClient();
+
+    const { error } = await sb
+      .from('projects')
+      .delete()
+      .eq('id', project.id);
+
+    if (error) {
+      setError(`Could not delete "${project.name}": ${error.message}`);
+      setDeleting(null);
+      return;
+    }
+
+    setProjects((current) =>
+      current.filter((p) => p.id !== project.id)
+    );
+
+    setDeleting(null);
+  }
 
   const filtered=useMemo(()=>projects.filter(p=>p.name.toLowerCase().includes(search.toLowerCase())||p.project_type.toLowerCase().includes(search.toLowerCase())),[projects,search]);
   const statusClass=(status:string)=>status==='Production'?'yellow':status==='Completed'?'green':status==='Post-production'?'blue':status==='Pre-production'?'blue':'blue';
