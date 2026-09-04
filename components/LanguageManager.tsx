@@ -22,7 +22,6 @@ const translations: Record<string, string> = {
 
   'SYSTEM':'SISTEM',
   'PRODUCTION':'PRODUKCIJA',
-  'Projects':'Projekti',
   'New project':'Novi projekat',
   'Project name':'Naziv projekta',
   'Project type':'Tip projekta',
@@ -30,7 +29,6 @@ const translations: Record<string, string> = {
   'Status':'Status',
   'Producer':'Producent',
   'Director':'Reditelj',
-  'Budget':'Budžet',
   'Budget (RSD)':'Budžet (RSD)',
   'Create project':'Kreiraj projekat',
   'Cancel':'Otkaži',
@@ -66,7 +64,6 @@ const translations: Record<string, string> = {
   'Log out':'Odjavi se',
   'Signing out…':'Odjavljivanje…',
 
-  'Scenes':'Scene',
   'Scene':'Scena',
   'Scene number':'Broj scene',
   'Int / Ext':'Enterijer / Eksterijer',
@@ -84,17 +81,14 @@ const translations: Record<string, string> = {
   'Notes':'Napomene',
   'New scene':'Nova scena',
 
-  'Shooting Schedule':'Plan snimanja',
   'Shoot day':'Dan snimanja',
   'Date':'Datum',
   'Start time':'Početak',
   'End time':'Kraj',
   'Crew call':'Poziv ekipe',
   'Lunch':'Pauza za ručak',
-  'Location':'Lokacija',
   'New schedule item':'Nova stavka plana',
 
-  'Call Sheets':'Call sheetovi',
   'Call sheet':'Call sheet',
   'General call':'Opšti poziv',
   'Weather':'Vreme',
@@ -103,7 +97,6 @@ const translations: Record<string, string> = {
   'Emergency contacts':'Kontakti za hitne slučajeve',
   'New call sheet':'Novi call sheet',
 
-  'Crew':'Ekipa',
   'Name':'Ime',
   'Department':'Odeljenje',
   'Position':'Pozicija',
@@ -113,7 +106,6 @@ const translations: Record<string, string> = {
   'Availability':'Dostupnost',
   'New crew member':'Novi član ekipe',
 
-  'Locations':'Lokacije',
   'Address':'Adresa',
   'Contact name':'Kontakt osoba',
   'Rate (RSD)':'Cena (RSD)',
@@ -122,7 +114,6 @@ const translations: Record<string, string> = {
   'Dressing room':'Garderoba',
   'New location':'Nova lokacija',
 
-  'Budget':'Budžet',
   'Budget categories':'Budžetske kategorije',
   'Category':'Kategorija',
   'Planned':'Planirano',
@@ -130,7 +121,6 @@ const translations: Record<string, string> = {
   'Remaining':'Preostalo',
   'Expenses':'Troškovi',
   'Expense':'Trošak',
-  'Description':'Opis',
   'Planned amount':'Planirani iznos',
   'Actual amount':'Stvarni iznos',
   'Paid':'Plaćeno',
@@ -139,7 +129,6 @@ const translations: Record<string, string> = {
   'New category':'Nova kategorija',
   'New expense':'Novi trošak',
 
-  'Daily Reports':'Dnevni izveštaji',
   'Daily report':'Dnevni izveštaj',
   'First shot':'Prvi kadar',
   'Lunch time':'Vreme ručka',
@@ -152,7 +141,6 @@ const translations: Record<string, string> = {
   'Incidents':'Incidenti',
   'New daily report':'Novi dnevni izveštaj',
 
-  'Documents':'Dokumenti',
   'Upload':'Otpremi',
   'Upload files':'Otpremi fajlove',
   'Choose files':'Izaberi fajlove',
@@ -164,7 +152,6 @@ const translations: Record<string, string> = {
   'Download':'Preuzmi',
   'Remove':'Ukloni',
 
-  'Team':'Tim',
   'Add member':'Dodaj člana',
   'Member email':'E-mail člana',
   'Role':'Uloga',
@@ -255,3 +242,4 @@ export default function LanguageManager() {
 
   return null;
 }
+
