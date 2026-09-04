@@ -32,21 +32,7 @@ export default function SignupPage(){
       return;
     }
 
-    if(data.user){
-      const { error: profileError } = await supabase
-        .from('profiles')
-        .upsert({
-          id: data.user.id,
-          full_name: name
-        });
-
-      if(profileError){
-        setError(profileError.message);
-        setLoading(false);
-        return;
-      }
-    }
-
+ 
     router.replace('/dashboard');
     router.refresh();
   }
